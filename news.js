@@ -1,6 +1,5 @@
 'use strict';
 
-var debug = require('debug')('news');
 var Diffbot = require('diffbot').Diffbot;
 var utilities = require('./lib/utilities.js');
 var _ = require('lodash');
@@ -21,11 +20,7 @@ var simpleUrls = exports.simpleUrls = {
 exports.simple = {};
 
 _.forOwn(simpleUrls, function (url, name) {
-  exports.simple[name] = function (cb) {
-    debug('simple.' + name, url);
-
-    utilities.articles(url, cb);
-  };
+  exports.simple[name] = _.partial(utilities.articles, url);
 });
 
 exports.GoogleNews = require('./lib/google-news.js');
