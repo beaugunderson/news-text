@@ -1,8 +1,8 @@
 {
-  "name": "google-news",
+  "name": "news",
   "version": "1.0.0",
-  "description": "Utilities for interacting with Google News RSS.",
-  "main": "google-news.js",
+  "description": "Utilities for interacting with RSS feeds.",
+  "main": "news.js",
   "scripts": {
     "test": "foreman start test"
   },
@@ -10,10 +10,10 @@
   "license": "BSD",
   "dependencies": {
     "async": "^0.9.0",
+    "blindparser": "^0.1.4",
+    "debug": "^2.0.0",
     "diffbot": "^0.1.0",
-    "htmlparser2": "^3.7.3",
-    "lodash": "^2.4.1",
-    "request": "^2.45.0"
+    "lodash": "^2.4.1"
   },
   "devDependencies": {
     "chai": "^1.9.2",
