@@ -1,11 +1,14 @@
 'use strict';
 
-var should = require('chai').should();
+require('chai').should();
+
 var _ = require('lodash');
 
 exports.testArticles = function (cb) {
   return function (err, articles) {
-    should.not.exist(err);
+    if (err) {
+      return cb(err);
+    }
 
     articles.should.be.instanceOf(Array);
     articles.length.should.be.above(0);

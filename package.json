@@ -2,13 +2,14 @@
   "name": "news-text",
   "version": "1.0.0",
   "description": "Utilities for getting article text from RSS feeds.",
-  "main": "news.js",
+  "main": "index.js",
   "scripts": {
-    "test": "foreman start test"
+    "test": "mocha -R spec"
   },
   "author": "Beau Gunderson <beau@beaugunderson.com>",
   "license": "BSD",
   "dependencies": {
+    "article": "^1.1.0",
     "async": "^0.9.0",
     "blindparser": "^0.1.4",
     "diffbot": "^0.1.0",

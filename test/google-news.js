@@ -1,13 +1,17 @@
 'use strict';
 
-var should = require('chai').should();
+require('chai').should();
 
 var GoogleNews = require('..').GoogleNews;
 var testUtilities = require('./utilities.js');
 
+var googleNews = new GoogleNews();
+
 function testLinks(cb) {
   return function (err, links) {
-    should.not.exist(err);
+    if (err) {
+      return cb(err);
+    }
 
     links.should.be.instanceOf(Array);
     links.length.should.be.above(0);
@@ -20,26 +24,32 @@ function testLinks(cb) {
   };
 }
 
-describe('google-news', function () {
-  var googleNews = new GoogleNews(process.env.DIFFBOT_TOKEN);
-
-  it('should get search links', function (cb) {
-    googleNews.searchLinks('obama', testLinks(cb));
+describe('GoogleNews', function () {
+  describe('searchLinks()', function () {
+    it('should search links', function (cb) {
+      googleNews.searchLinks('obama', testLinks(cb));
+    });
   });
 
-  it('should get the top links', function (cb) {
-    googleNews.topLinks(testLinks(cb));
+  describe('topLinks()', function () {
+    it('should get top links', function (cb) {
+      googleNews.topLinks(testLinks(cb));
+    });
   });
 
-  it('should get search articles', function (cb) {
-    this.timeout(30 * 1000);
+  describe('searchArticles()', function () {
+    it('should search articles', function (cb) {
+      this.timeout(30 * 1000);
 
-    googleNews.searchArticles('obama', testUtilities.testArticles(cb));
+      googleNews.searchArticles('obama', testUtilities.testArticles(cb));
+    });
   });
 
-  it('should get the top articles', function (cb) {
-    this.timeout(30 * 1000);
+  describe('topArticles()', function () {
+    it('should get top articles', function (cb) {
+      this.timeout(30 * 1000);
 
-    googleNews.topArticles(testUtilities.testArticles(cb));
+      googleNews.topArticles(testUtilities.testArticles(cb));
+    });
   });
 });
