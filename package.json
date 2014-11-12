@@ -19,5 +19,18 @@
   "devDependencies": {
     "chai": "^1.9.2",
     "mocha": "^2.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beaugunderson/node-news-text.git"
+  },
+  "keywords": [
+    "news",
+    "text",
+    "articles"
+  ],
+  "bugs": {
+    "url": "https://github.com/beaugunderson/node-news-text/issues"
+  },
+  "homepage": "https://github.com/beaugunderson/node-news-text"
 }
