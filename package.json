@@ -1,8 +1,8 @@
 {
   "name": "news-text",
-  "version": "1.1.0",
-  "description": "Utilities for getting article text from RSS feeds.",
-  "main": "index.js",
+  "version": "1.1.1",
+  "description": "Utilities for getting article text from RSS feeds",
+  "main": "news-text.js",
   "scripts": {
     "test": "mocha -R spec"
   },
@@ -14,10 +14,10 @@
     "blindparser": "^0.1.4",
     "diffbot": "^0.1.0",
     "lodash": "^2.4.1",
-    "request": "^2.47.0"
+    "request": "^2.48.0"
   },
   "devDependencies": {
-    "chai": "^1.9.2",
+    "chai": "^1.10.0",
     "mocha": "^2.0.1"
   },
   "repository": {
