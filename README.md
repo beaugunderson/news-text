@@ -5,9 +5,7 @@ Retrieve the article text from several news sites using either the
 [Diffbot](http://www.diffbot.com/) (if a Diffbot key is specified).
 
 ```js
-var Simple = require('news-text').Simple;
-
-var simple = new Simple();
+var simple =  new require('news-text').Simple();
 
 simple.reutersUsNews(function (err, articles) {
   articles.forEach(function (article) {
@@ -19,9 +17,7 @@ simple.reutersUsNews(function (err, articles) {
 Google News is searchable:
 
 ```
-var GoogleNews = require('news-text').GoogleNews;
-
-var googleNews = new GoogleNews();
+var googleNews = new require('news-text').GoogleNews();
 
 googleNews.searchArticles('taylor swift', function (err, articles) {
   articles.forEach(function (article) {
