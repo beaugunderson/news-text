@@ -1,6 +1,6 @@
 {
   "name": "news-text",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Utilities for getting article text from RSS feeds",
   "main": "news-text.js",
   "scripts": {
