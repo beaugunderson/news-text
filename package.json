@@ -14,7 +14,7 @@
     "blindparser": "^0.1.5",
     "debug": "^2.2.0",
     "diffbot": "^0.1.0",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.13",
     "request": "^2.64.0"
   },
   "devDependencies": {
