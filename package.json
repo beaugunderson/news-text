@@ -10,16 +10,16 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "article": "^1.1.2",
-    "async": "^1.4.2",
-    "blindparser": "^0.1.5",
-    "debug": "^2.2.0",
-    "diffbot": "^0.1.0",
-    "lodash": "^4.17.13",
-    "request": "^2.64.0"
+    "async": "^3.1.0",
+    "blindparser": "^1.0.3",
+    "debug": "^4.1.1",
+    "diffbot": "^1.0.3",
+    "lodash": "^4.17.15",
+    "request": "^2.88.0"
   },
   "devDependencies": {
-    "chai": "^3.3.0",
-    "mocha": "^2.3.3"
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
   },
   "repository": {
     "type": "git",
